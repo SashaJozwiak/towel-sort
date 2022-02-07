@@ -11,7 +11,5 @@ module.exports = function towelSort(matrix) {
     (i % 2 === 0) ? arr.push(matrix[i]) : arr.push(matrix[i].reverse());
   }
 
-  let result = [].concat.apply([], arr)
-
-  return result;
+  return [].concat.apply([], arr)
 }
